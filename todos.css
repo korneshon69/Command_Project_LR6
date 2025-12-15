@@ -1,0 +1,49 @@
+/* Стили для задач */
+.todos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.todo-card {
+    background: #f8f9fa;
+    padding: 15px 20px;
+    border-radius: 8px;
+    border-left: 4px solid #667eea;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.todo-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transform: translateX(5px);
+}
+
+.todo-card.todo-completed {
+    opacity: 0.7;
+    border-left-color: #27ae60;
+    background: #e8f5e9;
+}
+
+.todo-checkbox {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: #667eea;
+}
+
+.todo-title {
+    flex: 1;
+    font-size: 1.05em;
+    color: #333;
+}
+
+.todo-completed .todo-title {
+    text-decoration: line-through;
+    color: #95a5a6;
+}
+
