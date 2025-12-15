@@ -1,0 +1,44 @@
+/* Breadcrumbs стили */
+.breadcrumbs {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.breadcrumbs-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+}
+
+.breadcrumbs-item {
+    display: flex;
+    align-items: center;
+    font-size: 0.95em;
+}
+
+.breadcrumbs-link {
+    color: #667eea;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.breadcrumbs-link:hover {
+    color: #5568d3;
+    text-decoration: underline;
+}
+
+.breadcrumbs-current {
+    color: #333;
+    font-weight: 600;
+}
+
+.breadcrumbs-separator {
+    color: #95a5a6;
+    margin: 0 5px;
+}
+
